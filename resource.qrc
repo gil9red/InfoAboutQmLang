@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/">
+        <file alias="removeAll">images/delete_64_7321.png</file>
+        <file alias="open">images/folder_64_9368.png</file>
+        <file alias="add">images/plus_64_9912.png</file>
+        <file alias="saveAs">images/save_48_3498.png</file>
+        <file alias="remove">images/zoomout_2045.png</file>
+    </qresource>
+</RCC>
