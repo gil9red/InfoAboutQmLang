@@ -59,6 +59,7 @@ void MainWindow::on_tButtonOpen_clicked()
 
     ui->iconLabel->setPixmap( pixmap );
     ui->lEditNameLanguage->setText( ini.value( "Name" ).toString() );
+    ui->lEditShortNameLanguage->setText( ini.value( "ShortName" ).toString() );
     ui->lEditAuthor->setText( ini.value( "Author" ).toString() );
     ui->lEditContact->setText( ini.value( "Contact" ).toString() );
     ui->listWidgetFiles->addItems( ini.value( "Files" ).toStringList() );
@@ -84,6 +85,7 @@ void MainWindow::on_tButtonSaveAs_clicked()
     ini.setIniCodec( "utf8" );
     ini.setValue( "Icon", icon );
     ini.setValue( "Name", ui->lEditNameLanguage->text() );
+    ini.setValue( "ShortName", ui->lEditShortNameLanguage->text() );
     ini.setValue( "Author", ui->lEditAuthor->text() );
     ini.setValue( "Contact", ui->lEditContact->text() );
     ini.setValue( "Files", files );
