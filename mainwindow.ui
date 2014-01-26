@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>348</width>
+    <width>339</width>
     <height>248</height>
    </rect>
   </property>
@@ -142,21 +142,14 @@
              </property>
             </widget>
            </item>
-           <item row="2" column="0">
+           <item row="1" column="0">
             <widget class="QLabel" name="label_2">
              <property name="text">
               <string>Author:</string>
              </property>
             </widget>
            </item>
-           <item row="1" column="0">
-            <widget class="QLabel" name="label_5">
-             <property name="text">
-              <string>Tags:</string>
-             </property>
-            </widget>
-           </item>
-           <item row="2" column="1">
+           <item row="1" column="1">
             <widget class="QLineEdit" name="lEditAuthor">
              <property name="statusTip">
               <string>The author's name</string>
@@ -170,24 +163,17 @@
              </property>
             </widget>
            </item>
-           <item row="3" column="1">
+           <item row="2" column="1">
             <widget class="QLineEdit" name="lEditContact">
              <property name="statusTip">
               <string>Contact to author (eg, website or e-mail)</string>
              </property>
             </widget>
            </item>
-           <item row="3" column="0">
+           <item row="2" column="0">
             <widget class="QLabel" name="label_3">
              <property name="text">
               <string>Contact:</string>
-             </property>
-            </widget>
-           </item>
-           <item row="1" column="1">
-            <widget class="QLineEdit" name="lEditTags">
-             <property name="statusTip">
-              <string>Tags</string>
              </property>
             </widget>
            </item>
@@ -367,7 +353,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>348</width>
+     <width>339</width>
      <height>20</height>
     </rect>
    </property>
@@ -377,7 +363,6 @@
  <layoutdefault spacing="6" margin="11"/>
  <tabstops>
   <tabstop>lEditNameLanguage</tabstop>
-  <tabstop>lEditTags</tabstop>
   <tabstop>lEditAuthor</tabstop>
   <tabstop>lEditContact</tabstop>
   <tabstop>tButtonSelectIcon</tabstop>
