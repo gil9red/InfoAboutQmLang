@@ -56,7 +56,7 @@
             <rect>
              <x>0</x>
              <y>0</y>
-             <width>64</width>
+             <width>60</width>
              <height>60</height>
             </rect>
            </property>
@@ -135,6 +135,34 @@
          </property>
          <item>
           <layout class="QGridLayout" name="gridLayout">
+           <item row="0" column="1">
+            <widget class="QLineEdit" name="lEditNameLanguage">
+             <property name="statusTip">
+              <string>Language Name</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QLabel" name="label_2">
+             <property name="text">
+              <string>Author:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="label_5">
+             <property name="text">
+              <string>Tags:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QLineEdit" name="lEditAuthor">
+             <property name="statusTip">
+              <string>The author's name</string>
+             </property>
+            </widget>
+           </item>
            <item row="0" column="0">
             <widget class="QLabel" name="label">
              <property name="text">
@@ -142,7 +170,14 @@
              </property>
             </widget>
            </item>
-           <item row="2" column="0">
+           <item row="3" column="1">
+            <widget class="QLineEdit" name="lEditContact">
+             <property name="statusTip">
+              <string>Contact to author (eg, website or e-mail)</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="0">
             <widget class="QLabel" name="label_3">
              <property name="text">
               <string>Contact:</string>
@@ -150,30 +185,9 @@
             </widget>
            </item>
            <item row="1" column="1">
-            <widget class="QLineEdit" name="lEditAuthor">
+            <widget class="QLineEdit" name="lEditTags">
              <property name="statusTip">
-              <string>The author's name</string>
-             </property>
-            </widget>
-           </item>
-           <item row="1" column="0">
-            <widget class="QLabel" name="label_2">
-             <property name="text">
-              <string>Author:</string>
-             </property>
-            </widget>
-           </item>
-           <item row="2" column="1">
-            <widget class="QLineEdit" name="lEditContact">
-             <property name="statusTip">
-              <string>Contact to author (eg, website or e-mail)</string>
-             </property>
-            </widget>
-           </item>
-           <item row="0" column="1">
-            <widget class="QLineEdit" name="lEditNameLanguage">
-             <property name="statusTip">
-              <string>Language Name</string>
+              <string>Tags</string>
              </property>
             </widget>
            </item>
@@ -193,9 +207,6 @@
            </property>
            <item>
             <widget class="QListWidget" name="listWidgetFiles">
-             <property name="editTriggers">
-              <set>QAbstractItemView::NoEditTriggers</set>
-             </property>
              <property name="alternatingRowColors">
               <bool>true</bool>
              </property>
@@ -366,12 +377,17 @@
  <layoutdefault spacing="6" margin="11"/>
  <tabstops>
   <tabstop>lEditNameLanguage</tabstop>
+  <tabstop>lEditTags</tabstop>
   <tabstop>lEditAuthor</tabstop>
   <tabstop>lEditContact</tabstop>
+  <tabstop>tButtonSelectIcon</tabstop>
+  <tabstop>tButtonAdd</tabstop>
+  <tabstop>tButtonRemove</tabstop>
+  <tabstop>tButtonRemoveAll</tabstop>
   <tabstop>tButtonOpen</tabstop>
   <tabstop>tButtonSaveAs</tabstop>
-  <tabstop>tButtonSelectIcon</tabstop>
   <tabstop>tButtonQuit</tabstop>
+  <tabstop>listWidgetFiles</tabstop>
   <tabstop>scrollArea</tabstop>
  </tabstops>
  <resources>
