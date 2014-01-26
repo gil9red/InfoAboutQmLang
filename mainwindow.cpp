@@ -39,7 +39,7 @@ void MainWindow::on_tButtonSelectIcon_clicked()
         return;
 
     QPixmap pixmap( fileName );
-    pixmap = pixmap.scaled( QSize( 64, 64 ), Qt::KeepAspectRatio );
+    pixmap = pixmap.scaled( QSize( 64, 64 ), Qt::KeepAspectRatio, Qt::SmoothTransformation	);
     ui->iconLabel->setPixmap( pixmap );
 }
 void MainWindow::on_tButtonOpen_clicked()
