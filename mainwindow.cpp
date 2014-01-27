@@ -105,9 +105,10 @@ void MainWindow::on_tButtonAdd_clicked()
     if ( files.isEmpty() )
         return;
 
-    foreach ( const QString & fileName, files )
+    foreach ( const QString & path, files )
     {
         bool original = true;
+        const QString fileName = QFileInfo( path ).fileName();
         for ( int i = 0; i < ui->listWidgetFiles->count(); i++ )
            if ( ui->listWidgetFiles->item( i )->text() == fileName )
            {
